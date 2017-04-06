@@ -32,6 +32,10 @@
   border-radius: $border-radius-base;
 }
 
+.tooltip-inner-help {
+  min-width: 300px;
+}
+
 // Arrows
 .tooltip-arrow {
   position: absolute;

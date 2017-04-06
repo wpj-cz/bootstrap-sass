@@ -185,7 +185,7 @@ input[type="search"] {
   input[type="datetime-local"],
   input[type="month"] {
     &.form-control {
-      line-height: $input-height-base;
+      line-height: $line-height-base;
     }
 
     &.input-sm,
@@ -347,6 +347,7 @@ input[type="checkbox"] {
     line-height: $line-height-small;
   }
 }
+//@include input-size('.input-sm', $input-height-small, ($padding-small-vertical - 2), $padding-small-horizontal, ($font-size-small + 2), $line-height-small, $border-radius-small);
 
 @include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $input-border-radius-large);
 .form-group-lg {

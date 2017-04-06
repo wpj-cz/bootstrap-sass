@@ -80,8 +80,7 @@ $headings-color:          inherit !default;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
-
+$icon-font-path: "/admin/static/fonts/" !default;
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
@@ -289,7 +288,7 @@ $zindex-modal:             1050 !default;
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  480px !default;
+$screen-xs:                  300px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
@@ -297,14 +296,14 @@ $screen-phone:               $screen-xs-min !default;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  768px !default;
+$screen-sm:                  400px !default;
 $screen-sm-min:              $screen-sm !default;
 //** Deprecated `$screen-tablet` as of v3.0.1
 $screen-tablet:              $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
+$screen-md:                  900px !default;
 $screen-md-min:              $screen-md !default;
 //** Deprecated `$screen-desktop` as of v3.0.1
 $screen-desktop:             $screen-md-min !default;
@@ -342,12 +341,12 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-tablet:             ((400px + $grid-gutter-width)) !default;
 //** For `$screen-sm-min` and up.
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-desktop:            ((900px + $grid-gutter-width)) !default;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop !default;
 
@@ -523,7 +522,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 //##
 
 //** Tooltip max width
-$tooltip-max-width:           200px !default;
+$tooltip-max-width:           500px !default;
 //** Tooltip text color
 $tooltip-color:               #fff !default;
 //** Tooltip background color
